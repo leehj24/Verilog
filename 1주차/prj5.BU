@@ -1,0 +1,19 @@
+module fulladder_tb;
+  wire sum, cout;
+  reg a, b, cin;
+  fulladder f1 (sum, cout, a, b, cin);
+  initial begin
+    $monitor("%d: %b %b : %b %b : %b %b", $time, a, b, cin, cout, sum);
+    #180 $finish;
+  end
+  initial begin
+    #20 a=0; b=0; cin=0;   
+    #20 a=0; b=0; cin=1;    
+    #20 a=0; b=1; cin=0;    
+    #20 a=0; b=1; cin=1;
+    #20 a=1; b=0; cin=0;
+    #20 a=1; b=0; cin=1;
+    #20 a=1; b=1; cin=0;
+    #20 a=1; b=1; cin=1;
+  end
+endmodule
