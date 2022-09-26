@@ -3,7 +3,7 @@ module	halfadder_tb;
   reg	a, b;
   halfadder u1 (sum, cout, a, b);
   initial begin
-    $monitor("%d: %b	%b : %b%b", $time, a, b, cout, sum);
+    $monitor("%d: %b %b : %b %b", $time, a, b, cout, sum);
     #100 $finish;
   end
   initial begin
