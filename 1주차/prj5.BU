@@ -3,17 +3,17 @@ module fulladder_tb;
   reg a, b, cin;
   fulladder f1 (sum, cout, a, b, cin);
   initial begin
-    $monitor("%d: %b %b : %b %b : %b %b", $time, a, b, cin, cout, sum);
+    $monitor("%d: %b %b : %b %b : %b %b", $time, cin, a, b, cout, sum);
     #180 $finish;
   end
   initial begin
-    #20 a=0; b=0; cin=0;   
-    #20 a=0; b=0; cin=1;    
-    #20 a=0; b=1; cin=0;    
-    #20 a=0; b=1; cin=1;
-    #20 a=1; b=0; cin=0;
-    #20 a=1; b=0; cin=1;
-    #20 a=1; b=1; cin=0;
-    #20 a=1; b=1; cin=1;
+    #20 cin=0; a=0; b=0;  
+    #20 cin=0; a=0; b=1;     
+    #20 cin=0; a=1; b=1;    
+    #20 cin=0; a=1; b=0; 
+    #20 cin=1 ;a=1; b=0; 
+    #20 cin=1; a=1; b=1; 
+    #20 cin=1; a=0; b=1;
+    #20 cin=1; a=0; b=0; 
   end
 endmodule
