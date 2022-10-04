@@ -30,7 +30,7 @@ module mux2_4_tb;
   data1_2 = 4'b0111; data0_2 = 4'b0111;
   #20
   data1_1 = 4'b1000; data0_1 = 4'b0010;
-  data1_2 = 4'b0010; data0_2 = 4'b1000;
+  data1_2 = 4'b0010; data0_2 = 4'10000;
   #20
   data1_1 = 4'b1001; data0_1 = 4'b0001;
   data1_2 = 4'b0001; data0_2 = 4'b1001;
