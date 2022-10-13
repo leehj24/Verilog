@@ -1,0 +1,19 @@
+module shift4(clk, E, D, C, B, A);
+  input clk;
+	
+  input E;
+	
+  output D, C, B, A;
+	
+  reg D, C, B, A;	// output in always
+
+  always @(posedge clk) begin 
+    A = B;
+    B = C;
+    C = D;
+    D = E;
+
+  end
+
+endmodule 
+
