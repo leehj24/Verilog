@@ -1,0 +1,31 @@
+|updown_counter2
+clk => qout[0]~reg0.CLK
+clk => qout[1]~reg0.CLK
+clk => qout[2]~reg0.CLK
+clk => qout[3]~reg0.CLK
+reset => qout[0]~reg0.ACLR
+reset => qout[1]~reg0.ACLR
+reset => qout[2]~reg0.ACLR
+reset => qout[3]~reg0.ACLR
+load => qout.OUTPUTSELECT
+load => qout.OUTPUTSELECT
+load => qout.OUTPUTSELECT
+load => qout.OUTPUTSELECT
+enable => qout.OUTPUTSELECT
+enable => qout.OUTPUTSELECT
+enable => qout.OUTPUTSELECT
+enable => qout.OUTPUTSELECT
+up => qout.OUTPUTSELECT
+up => qout.OUTPUTSELECT
+up => qout.OUTPUTSELECT
+up => qout.OUTPUTSELECT
+data[0] => qout.DATAB
+data[1] => qout.DATAB
+data[2] => qout.DATAB
+data[3] => qout.DATAB
+qout[0] <= qout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= qout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= qout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[3] <= qout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

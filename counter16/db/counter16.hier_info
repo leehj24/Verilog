@@ -1,0 +1,107 @@
+|counter16
+clk => clk.IN4
+reset => reset.IN4
+enable => enable.IN1
+qout[0] <= counter4:u1.port3
+qout[1] <= counter4:u1.port3
+qout[2] <= counter4:u1.port3
+qout[3] <= counter4:u1.port3
+qout[4] <= counter4:u2.port3
+qout[5] <= counter4:u2.port3
+qout[6] <= counter4:u2.port3
+qout[7] <= counter4:u2.port3
+qout[8] <= counter4:u3.port3
+qout[9] <= counter4:u3.port3
+qout[10] <= counter4:u3.port3
+qout[11] <= counter4:u3.port3
+qout[12] <= counter4:u4.port3
+qout[13] <= counter4:u4.port3
+qout[14] <= counter4:u4.port3
+qout[15] <= counter4:u4.port3
+tc <= counter4:u4.port4
+
+
+|counter16|counter4:u1
+clk => qout[0]~reg0.CLK
+clk => qout[1]~reg0.CLK
+clk => qout[2]~reg0.CLK
+clk => qout[3]~reg0.CLK
+reset => qout[0]~reg0.ACLR
+reset => qout[1]~reg0.ACLR
+reset => qout[2]~reg0.ACLR
+reset => qout[3]~reg0.ACLR
+enable => tc.IN1
+enable => qout[3]~reg0.ENA
+enable => qout[2]~reg0.ENA
+enable => qout[1]~reg0.ENA
+enable => qout[0]~reg0.ENA
+qout[0] <= qout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= qout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= qout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[3] <= qout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter16|counter4:u2
+clk => qout[0]~reg0.CLK
+clk => qout[1]~reg0.CLK
+clk => qout[2]~reg0.CLK
+clk => qout[3]~reg0.CLK
+reset => qout[0]~reg0.ACLR
+reset => qout[1]~reg0.ACLR
+reset => qout[2]~reg0.ACLR
+reset => qout[3]~reg0.ACLR
+enable => tc.IN1
+enable => qout[3]~reg0.ENA
+enable => qout[2]~reg0.ENA
+enable => qout[1]~reg0.ENA
+enable => qout[0]~reg0.ENA
+qout[0] <= qout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= qout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= qout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[3] <= qout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter16|counter4:u3
+clk => qout[0]~reg0.CLK
+clk => qout[1]~reg0.CLK
+clk => qout[2]~reg0.CLK
+clk => qout[3]~reg0.CLK
+reset => qout[0]~reg0.ACLR
+reset => qout[1]~reg0.ACLR
+reset => qout[2]~reg0.ACLR
+reset => qout[3]~reg0.ACLR
+enable => tc.IN1
+enable => qout[3]~reg0.ENA
+enable => qout[2]~reg0.ENA
+enable => qout[1]~reg0.ENA
+enable => qout[0]~reg0.ENA
+qout[0] <= qout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= qout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= qout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[3] <= qout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter16|counter4:u4
+clk => qout[0]~reg0.CLK
+clk => qout[1]~reg0.CLK
+clk => qout[2]~reg0.CLK
+clk => qout[3]~reg0.CLK
+reset => qout[0]~reg0.ACLR
+reset => qout[1]~reg0.ACLR
+reset => qout[2]~reg0.ACLR
+reset => qout[3]~reg0.ACLR
+enable => tc.IN1
+enable => qout[3]~reg0.ENA
+enable => qout[2]~reg0.ENA
+enable => qout[1]~reg0.ENA
+enable => qout[0]~reg0.ENA
+qout[0] <= qout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= qout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= qout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[3] <= qout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
