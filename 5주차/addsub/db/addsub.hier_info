@@ -1,0 +1,28 @@
+|addsub
+sub => b2[3].OUTPUTSELECT
+sub => b2[2].OUTPUTSELECT
+sub => b2[1].OUTPUTSELECT
+sub => b2[0].OUTPUTSELECT
+sub => cin2.OUTPUTSELECT
+sub => cout.OUTPUTSELECT
+a[0] => Add0.IN4
+a[1] => Add0.IN3
+a[2] => Add0.IN2
+a[3] => Add0.IN1
+b[0] => b2[0].DATAA
+b[0] => b2[0].DATAB
+b[1] => b2[1].DATAA
+b[1] => b2[1].DATAB
+b[2] => b2[2].DATAA
+b[2] => b2[2].DATAB
+b[3] => b2[3].DATAA
+b[3] => b2[3].DATAB
+cin => cin2.DATAA
+cin => cin2.DATAB
+s[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

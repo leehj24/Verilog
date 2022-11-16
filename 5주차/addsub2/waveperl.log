@@ -1,0 +1,13 @@
+Compiling and executing C:\SynaptiCAD\perl\autoexec.pl at Mon Nov 14 18:27:06 2022
+Eval C:\SynaptiCAD\perl\autoexec.pl
+Error: Persist.pl found the following error during eval of C:\SynaptiCAD\perl\autoexec.pl:
+  Can't locate sampleStorageProcess.pm in @INC (@INC contains: C:\SynaptiCAD\perl\ C:\SynaptiCAD\lib C:\SynaptiCAD\site\5.00501\lib C:\SynaptiCAD\site\lib .) at C:\SynaptiCAD\perl\/processtim.pm line 14.
+BEGIN failed--compilation aborted at C:\SynaptiCAD\perl\/processtim.pm line 14.
+BEGIN failed--compilation aborted at C:\SynaptiCAD\perl\/processproject.pm line 2.
+BEGIN failed--compilation aborted at (eval 5) line 20.
+
+eval error: Can't locate sampleStorageProcess.pm in @INC (@INC contains: C:\SynaptiCAD\perl\ C:\SynaptiCAD\lib C:\SynaptiCAD\site\5.00501\lib C:\SynaptiCAD\site\lib .) at C:\SynaptiCAD\perl\/processtim.pm line 14.
+BEGIN failed--compilation aborted at C:\SynaptiCAD\perl\/processtim.pm line 14.
+BEGIN failed--compilation aborted at C:\SynaptiCAD\perl\/processproject.pm line 2.
+BEGIN failed--compilation aborted at (eval 5) line 20.
+

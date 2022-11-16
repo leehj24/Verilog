@@ -1,0 +1,22 @@
+Dumping macros: __VERIWELL__
+VeriLogger Pro simulation log created at Mon Nov 14 18:33:36 2022
+Beginning Compile
+Beginning Phase I
+Compiling source file: C:\project\addsub2\addsub2.v
+Finished Phase I
+Entering Phase II...
+Finished Phase II
+Entering Phase III...
+Finished Phase III
+Highest level modules:   addsub2
+Finding handle to s
+Warning: Could not find handle to net s for addition to watched list
+Finding handle to cout
+Warning: Could not find handle to net cout for addition to watched list
+Compile Complete
+.
+Running...
+0 Errors, 0 Warnings
+Compile time = 0.00800, Load time = 0.00800, Execution time = 0.02400
+
+Normal exit
