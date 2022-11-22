@@ -1,0 +1,62 @@
+# do datapath.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath_vlg_sample_tst
+# -- Compiling module datapath_vlg_check_tst
+# -- Compiling module datapath_vlg_vec_tst
+# 
+# Top level modules:
+# 	datapath_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.datapath_vlg_vec_tst 
+# Loading work.datapath_vlg_vec_tst
+# Loading work.datapath
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.datapath_vlg_sample_tst
+# Loading work.datapath_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from datapath_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from datapath_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath_vlg_vec_tst File: datapath.vt
+# ERROR! Vector Mismatch for output port remainder[2] :: @time = 5000.000 ps
+#      Expected value = 0000
+#      Real value = 0x00
+# ERROR! Vector Mismatch for output port remainder[0] :: @time = 20000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port remainder[1] :: @time = 20000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port remainder[2] :: @time = 20000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port remainder[3] :: @time = 20000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port quotient[0] :: @time = 30000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port quotient[1] :: @time = 30000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port quotient[2] :: @time = 30000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+# ERROR! Vector Mismatch for output port quotient[3] :: @time = 30000.000 ps
+#      Expected value = 1111
+#      Real value = 0000
+#           9 mismatched vectors : Simulation failed !
+# ** Note: $finish    : datapath.vt(352)
+#    Time: 1 us  Iteration: 0  Instance: /datapath_vlg_vec_tst/tb_out
