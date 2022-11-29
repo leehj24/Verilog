@@ -1,0 +1,77 @@
+module sdiv(clk, reset, start, word1, word2, quotient, remainder, ready);
+	input clk, reset, start;
+	input [7:0] word1;
+	input [3:0] word2;
+	output [3:0] quotient, remainder;
+	output ready;
+	
+	wire  load, shift, subshift, sub, lt;
+	
+	datapath u1 (clk, reset, load, shift, subshift, ready, word1, word2, quotient,
+				remainder, lt); 
+	controller u2 (clk, reset, start, lt, load, shift, subshift, ready);
+endmodule
+
+module datapath (clk, reset, load, shift, subshift, ready, word1, word2, quotient, 
+			     remainder, lt); 
+	input clk, reset, load, shift, subshift, ready;
+	input [7:0] word1;
+	input [3:0] word2;
+	output [3:0] quotient, remainder;
+	output lt;
+	
+	reg [7:0] dividend;		// 8-bit
+	reg [3:0] divisor;		// 4-bit
+	reg sign;				// different sign flag of word1 and word2
+	wire [4:0] diff;		// 5-bit
+	wire lt;				// less than 
+	wire [4:0] edivisor;
+	wire [4:0] edividend;
+	wire [4:0] diff2;		// 5-bit
+		
+	assign edivisor = {divisor[3], divisor};	// sign extension of divisor
+	assign diff = (dividend[7]^divisor[3]) ? 
+					(dividend[7:3] + edivisor) : (dividend[7:3] - edivisor);
+	assign lt = (dividend[7]^diff[4]) && (diff != 4'b0); // dividend[7:4] < divisor
+	
+	assign quotient = sign ? -dividend[3:0] : dividend[3:0];
+	assign remainder =  dividend[7:4];
+	
+  	always @ (posedge clk or posedge reset) begin
+		if (reset) begin dividend <= 0; divisor <= 0; end
+    	else if (load) begin 
+			dividend <= word1;	
+			divisor <= word2; 
+			sign <= word1[7] ^ word2[3];
+		end 
+		else if (shift) 	// shift left, quotient=0
+			dividend <= {dividend[6:0], 1'b0};		
+		else if (subshift) 	// save result & shift left, quotient=1
+			dividend <= {diff[3:0], dividend[2:0], 1'b1};	
+	end
+endmodule
+
+module controller (clk, reset, start, lt, load, shift, subshift, ready);
+	input clk, reset, start, lt;
+	output load, shift, subshift, ready;
+	
+	reg overflow;
+	reg state;
+	reg [1:0] count;
+	localparam S0 = 0, S1 = 1;
+
+	always @ (posedge clk or posedge reset) begin 	// State transitions
+		if (reset) begin state <= S0; count <= 0; end
+		else 
+			case (state)
+			 S0: if (start) begin state <= S1; count <= 3; end
+			 S1: if (count==0) state <= S0;
+				 else count <= count-1;
+			endcase
+	end
+ // control output logic
+	assign load = (state==S0) && start; 
+	assign shift = (state==S1) && lt;
+	assign subshift = (state==S1) && ~lt;
+	assign ready = (state==S0) && ~reset;
+endmodule

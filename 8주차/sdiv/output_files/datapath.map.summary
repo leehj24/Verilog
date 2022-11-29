@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 29 21:26:52 2022
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : datapath
+Top-level Entity Name : sdiv
+Family : Cyclone IV E
+Total logic elements : 39
+    Total combinational functions : 35
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
