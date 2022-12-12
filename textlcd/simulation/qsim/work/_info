@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\project\textlcd\simulation\qsim
+vtextlcd
+Z1 !s100 A4oLUJMf45@`9e0d3XT_K2
+Z2 Ih4SPgalPD880BN[o;eaO]3
+Z3 VV[[RVoz[1Zlf@ZBB<JoG<3
+Z4 dC:\project\textlcd\simulation\qsim
+Z5 w1670200281
+Z6 8textlcd.vo
+Z7 Ftextlcd.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|textlcd.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1670200282.509000
+Z12 !s107 textlcd.vo|
+!s101 -O0
+vtextlcd_vlg_check_tst
+!i10b 1
+!s100 KNn42BnP52SgJTZX^oXU41
+I<NNoRC;@e4GJj:Ub`KWbY2
+Z13 V7=;`Yg8JD_P:aN@T5ZHD31
+R4
+Z14 w1670200280
+Z15 8textlcd.vt
+Z16 Ftextlcd.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z17 !s108 1670200282.662000
+Z18 !s107 textlcd.vt|
+Z19 !s90 -work|work|textlcd.vt|
+!s101 -O0
+R10
+vtextlcd_vlg_sample_tst
+!i10b 1
+Z20 !s100 YIlb:2icXmnA]STDfkWi=2
+Z21 IBPWnnGgKNG16_eJ8HHn5c3
+Z22 VCi?YP^e1^Ci5cdGZMkM8j0
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+vtextlcd_vlg_vec_tst
+!i10b 1
+Z23 !s100 ]e9mSYdBSKOFIUjN`F]Sa0
+Z24 IQ1WCHLSI1edhW7bY3>oM`3
+Z25 V:4SV=FWzM3<WnRA2HcXhV3
+R4
+R14
+R15
+R16
+Z26 L0 432
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10

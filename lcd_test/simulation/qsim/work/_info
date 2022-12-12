@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\project\lcd_test\simulation\qsim
+vlcd_test
+Z1 !s100 f4M7e^JK6VM^Q::B_z@lf1
+Z2 I2GM2AL<8<cgZ6B=K9bK713
+Z3 VBbLSj[zYZhh;NPhGU86@j2
+Z4 dC:\project\lcd_test\simulation\qsim
+Z5 w1670201202
+Z6 8lcd_test.vo
+Z7 Flcd_test.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|lcd_test.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1670201203.692000
+Z12 !s107 lcd_test.vo|
+!s101 -O0
+vlcd_test_vlg_check_tst
+!i10b 1
+!s100 Gdn?g`X^DBni54^k2[Z2k3
+IZhiD=o3UngX`RNFiNg73L2
+Z13 VR74g`=RP`3B4^_S9Ha^342
+R4
+Z14 w1670201201
+Z15 8lcd_test.vt
+Z16 Flcd_test.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z17 !s108 1670201203.833000
+Z18 !s107 lcd_test.vt|
+Z19 !s90 -work|work|lcd_test.vt|
+!s101 -O0
+R10
+vlcd_test_vlg_sample_tst
+!i10b 1
+Z20 !s100 4C4>XQR=IhnGC7S<miN1=3
+Z21 IGk;?9a]]=H[c@niZ5Wa343
+Z22 VBVX?mhU7gFY:mEEFhRFMD2
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+vlcd_test_vlg_vec_tst
+!i10b 1
+!s100 zf^e04Ic]nNjTN0UDg0Yn1
+Ikg@T@6WJYOO[Gnnj0Ofbg2
+Z23 Vz_B^=g3XiW>OlnBRhz7n=3
+R4
+R14
+R15
+R16
+L0 349
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10

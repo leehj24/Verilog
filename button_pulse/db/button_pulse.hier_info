@@ -1,0 +1,7 @@
+|button_pulse
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+button_in => ~NO_FANOUT~
+button_out <= <GND>
+
+
